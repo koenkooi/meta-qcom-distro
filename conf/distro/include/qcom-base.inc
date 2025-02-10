@@ -20,6 +20,9 @@ VIRTUAL-RUNTIME_dev_manager  = "udev"
 
 PACKAGECONFIG:append:pn-systemd = " resolved networkd"
 
+# Set a default package class to avoid surprises
+PACKAGE_CLASSES = "package_ipk"
+
 # Avoid to duplicate the rootfs tarball by generating both tar.gz/tar.xz
 IMAGE_FSTYPES:remove = "tar.gz"
 
