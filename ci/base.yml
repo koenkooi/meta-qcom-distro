@@ -27,6 +27,20 @@ repos:
     layers:
       .: excluded
 
+  meta-oe:
+    url: https://git.openembedded.org/meta-openembedded
+    layers:
+      meta-oe:
+      meta-gnome:
+      meta-multimedia:
+      meta-networking:
+      meta-perl:
+      meta-python:
+      meta-xfce:
+
+  meta-wayland:
+    url: https://github.com/koenkooi/meta-wayland.git
+
 local_conf_header:
   base: |
     CONF_VERSION = "2"
