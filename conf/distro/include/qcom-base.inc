@@ -27,8 +27,8 @@ PACKAGE_CLASSES = "package_ipk"
 IMAGE_FSTYPES:remove = "tar.gz"
 
 # Fastboot expects an ext4 image, which needs to be 4096 aligned
-IMAGE_FSTYPES = "ext4"
-IMAGE_ROOTFS_ALIGNMENT = "4096"
+#IMAGE_FSTYPES = "ext4"
+#IMAGE_ROOTFS_ALIGNMENT = "4096"
 
 # Pull in the initrd image by default
 #INITRAMFS_IMAGE_BUNDLE ?= "1"
