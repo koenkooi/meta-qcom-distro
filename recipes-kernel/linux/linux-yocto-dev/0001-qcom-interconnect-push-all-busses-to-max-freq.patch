@@ -1,0 +1,29 @@
+From d6e487c1b473b7d27a97c34d7de6845f56e77712 Mon Sep 17 00:00:00 2001
+From: Koen Kooi <koen.kooi@oss.qualcomm.com>
+Date: Mon, 17 Feb 2025 10:44:04 +0100
+Subject: [PATCH] qcom interconnect: push all busses to max freq
+
+Suggested by Konrad Dybcio, it's very much NOT shippable!
+
+Signed-off-by: Koen Kooi <koen.kooi@oss.qualcomm.com>
+Upstream-Status: Inappropriate
+---
+ drivers/interconnect/qcom/sc7280.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/interconnect/qcom/sc7280.c b/drivers/interconnect/qcom/sc7280.c
+index 346f18d70e9e..74bd74960c9d 100644
+--- a/drivers/interconnect/qcom/sc7280.c
++++ b/drivers/interconnect/qcom/sc7280.c
+@@ -2115,7 +2115,7 @@ static struct platform_driver qnoc_driver = {
+ 	.driver = {
+ 		.name = "qnoc-sc7280",
+ 		.of_match_table = qnoc_of_match,
+-		.sync_state = icc_sync_state,
++		//.sync_state = icc_sync_state,
+ 	},
+ };
+ module_platform_driver(qnoc_driver);
+-- 
+2.34.1
+
